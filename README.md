@@ -3,6 +3,7 @@
 **NoServer File Share** is a lightweight and user-friendly file sharing application that requires no server setup, provides instant file sharing without upload time, and supports fast transfer speeds. Ideal for sharing files quickly and efficiently, this application is designed with simplicity and performance in mind.
 
  Download it directly here: [file_server.exe](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/file_server.exe)
+ 
 ## Features
 
 - **No Server Required**: Run the application on your local machine without the need for any external server setup.
@@ -25,6 +26,9 @@
 
 2. **Run the Application**:
    - Double-click the `file_server.exe` file to start the application.
+   - Open CMD and paste 
+   ```bash
+   ssh -R 80:localhost:1234 serveo.ne
 
 ## Usage
 
