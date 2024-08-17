@@ -2,8 +2,11 @@
 
 **NoServer File Share** is a lightweight and user-friendly file sharing application that requires no server setup, provides instant file sharing without upload time, and supports fast transfer speeds. Ideal for sharing files quickly and efficiently, this application is designed with simplicity and performance in mind.
 
- Download it directly here: [file_server.exe](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/file_server.exe)
- 
+## Download
+
+[![Download](https://img.icons8.com/ios-filled/50/000000/download.png)](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/NoServerShare.exe)
+- **Direct Download**: [file_server.exe](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/NoServerShare.exe)
+
 ## Features
 
 - **No Server Required**: Run the application on your local machine without the need for any external server setup.
@@ -22,29 +25,8 @@
    - You can download the latest version of the application directly from the [releases page](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases).
    - Alternatively, download it directly here: [file_server.exe](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/file_server.exe).
 
-
-
 2. **Run the Application**:
    - Double-click the `file_server.exe` file to start the application.
    - Open CMD and paste 
    ```bash
-   ssh -R 80:   serveo.net
-
-## Usage
-
-1. **Select Folder**: Click the "Select Folder" button to choose the folder you want to share.
-2. **Server Status**: The application will display the server status with a clickable link to access your files.
-3. **Stop Server**: Click the "Stop Server" button to halt the file sharing service.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries or support, please contact [Shohan](https://www.facebook.com/0Shohan0/).
-
-## Acknowledgements
-
-- Built with PyQt5 for the GUI.
-- Utilizes Flask for serving files over HTTP.
+   ssh -R 80:serveo.net
