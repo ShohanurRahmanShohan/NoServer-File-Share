@@ -29,4 +29,4 @@
    - Double-click the `file_server.exe` file to start the application.
    - Open CMD and paste 
    ```bash
-   ssh -R 80:    serveo.net
+   ssh -R 80:   serveo.net
