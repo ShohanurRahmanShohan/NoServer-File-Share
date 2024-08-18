@@ -47,11 +47,16 @@ SCRIPT_NAME="for_linx.py"
 VENV_DIR="venv"
 
 # Download the Python script
-curl -o $SCRIPT_NAME $REPO_URL
+curl -o "$SCRIPT_NAME" "$REPO_URL"
 
-# Echo that the file has been downloaded
-echo "$SCRIPT_NAME has been downloaded."
-echo "Run using , python for_linx.py"
+# Check if the download was successful
+if [ $? -eq 0 ]; then
+    echo -e "\n${SCRIPT_NAME} has been successfully downloaded."
+    echo -e "To run the script, use: \n  python $SCRIPT_NAME\n"
+else
+    echo -e "\nFailed to download ${SCRIPT_NAME}. Please check the URL and try again.\n"
+fi
+
 
 ```
 **Port Forwarding**:
