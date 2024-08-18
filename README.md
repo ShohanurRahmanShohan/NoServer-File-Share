@@ -36,44 +36,9 @@
 
 ## Installation (Linux)
 
-1. **Clone the Repository**:
-   - Open your terminal and run:
-     ```bash
-     git clone https://github.com/ShohanurRahmanShohan/NoServer-File-Share.git
-     cd NoServer-File-Share
-     ```
 
-2. **Run the Application**:
-   - You can use the following bash script to set up and run the application:
 
-     ```bash
-     #!/bin/bash
 
-     # Define variables
-     PROJECT_DIR="NoServer-File-Share"
-     REPO_URL="https://github.com/ShohanurRahmanShohan/NoServer-File-Share.git"
-     VENV_DIR="venv"
-     FLASK_SCRIPT="flask_app.py"
-
-     # Clone the GitHub repository
-     git clone $REPO_URL
-     cd $PROJECT_DIR
-
-     # Create a new virtual environment
-     python3 -m venv $VENV_DIR
-
-     # Activate the virtual environment
-     source $VENV_DIR/bin/activate
-
-     # Install the required Python packages
-     pip install -r requirements.txt
-
-     # Run the Flask application script
-     python $FLASK_SCRIPT &
-
-     # Start port forwarding with Serveo
-     ssh -R 80:localhost:1234 serveo.net
-     ```
  **Access the Application**:
    - Once the server is running, you can access it by visiting `http://localhost:1234` or the public URL provided by Serveo.
 
