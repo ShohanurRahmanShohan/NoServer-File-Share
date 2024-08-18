@@ -42,8 +42,8 @@ To run the application on Linux, Use this bash script:
 #!/bin/bash
 
 # Define variables
-REPO_URL="https://github.com/ShohanurRahmanShohan/NoServer-File-Share/blob/main/for_linx.py"
-SCRIPT_NAME="for_linux.py"
+REPO_URL="https://raw.githubusercontent.com/ShohanurRahmanShohan/NoServer-File-Share/main/for_linx.py"
+SCRIPT_NAME="for_linx.py"
 VENV_DIR="venv"
 
 # Download the Python script
@@ -51,6 +51,7 @@ curl -o $SCRIPT_NAME $REPO_URL
 
 # Run the Python script
 python $SCRIPT_NAME
+
 
 ```
 **Port Forwarding**:
