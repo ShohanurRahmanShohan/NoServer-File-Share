@@ -49,20 +49,9 @@ VENV_DIR="venv"
 # Download the Python script
 curl -o $SCRIPT_NAME $REPO_URL
 
-# Create a virtual environment
-python3 -m venv $VENV_DIR
-
-# Activate the virtual environment
-source $VENV_DIR/bin/activate
-
-# Install required packages
-pip install flask
-
 # Run the Python script
 python $SCRIPT_NAME
 
-# Deactivate the virtual environment after running the script
-deactivate 
 ```
 **Port Forwarding**:
    - To expose your local server to the internet :
