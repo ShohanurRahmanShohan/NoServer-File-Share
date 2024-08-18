@@ -36,12 +36,36 @@
 
 ## Installation (Linux)
 
+To run the application on Linux, Use this bash script:
 
+```bash
+#!/bin/bash
 
+# Define variables
+REPO_URL="https://raw.githubusercontent.com/ShohanurRahmanShohan/NoServer-File-Share/main/for_linx.py"
+SCRIPT_NAME="for_linx.py"
+VENV_DIR="venv"
 
- **Access the Application**:
-   - Once the server is running, you can access it by visiting `http://localhost:1234` or the public URL provided by Serveo.
+# Download the Python script
+curl -o $SCRIPT_NAME $REPO_URL
 
-## License
+# Create a virtual environment
+python3 -m venv $VENV_DIR
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Activate the virtual environment
+source $VENV_DIR/bin/activate
+
+# Install required packages
+pip install flask rich
+
+# Run the Python script
+python $SCRIPT_NAME
+
+# Deactivate the virtual environment after running the script
+deactivate 
+```
+**Port Forwarding**:
+   - To expose your local server to the internet, you can use Serveo with the following command in CMD:
+     ```bash
+     ssh -R 80:localhost:1234 serveo.net
+     ```
