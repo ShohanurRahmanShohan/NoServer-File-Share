@@ -4,7 +4,7 @@
 
 ## Download
 
-[![Download](https://img.icons8.com/ios-filled/50/000000/download.png)](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/NoServerShare.exe)
+[![Download](https://img.icons8.com/color/50/000000/download.png)](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/NoServerShare.exe)
 - **Direct Download**: [file_server.exe](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases/download/exe/NoServerShare.exe)
 
 ## Features
