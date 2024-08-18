@@ -49,9 +49,9 @@ VENV_DIR="venv"
 # Download the Python script
 curl -o $SCRIPT_NAME $REPO_URL
 
-# Run the Python script
-python $SCRIPT_NAME
-
+# Echo that the file has been downloaded
+echo "$SCRIPT_NAME has been downloaded."
+echo "Run using , python for_linx.py"
 
 ```
 **Port Forwarding**:
