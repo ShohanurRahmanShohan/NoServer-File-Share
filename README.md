@@ -19,7 +19,7 @@
 - **Status Indicator**: Get real-time status updates with a clickable link to the server URL.
 - **Customizable**: Includes a cute icon and customizable footer with a link to the creator’s profile.
 
-## Installation
+## Installation (Windows)
 
 1. **Download the Executable**:
    - You can download the latest version of the application directly from the [releases page](https://github.com/ShohanurRahmanShohan/NoServer-File-Share/releases).
@@ -27,6 +27,64 @@
 
 2. **Run the Application**:
    - Double-click the `file_server.exe` file to start the application.
-   - Open CMD and paste 
-   ```bash
-   ssh -R 80: your_link  serveo.net
+
+3. **Port Forwarding**:
+   - To expose your local server to the internet, you can use Serveo with the following command in CMD:
+     ```bash
+     ssh -R 80: your_link serveo.net
+     ```
+
+## Installation (Linux)
+
+1. **Clone the Repository**:
+   - Open your terminal and run:
+     ```bash
+     git clone https://github.com/ShohanurRahmanShohan/NoServer-File-Share.git
+     cd NoServer-File-Share
+     ```
+
+2. **Run the Application**:
+   - You can use the following bash script to set up and run the application:
+
+     ```bash
+     #!/bin/bash
+
+     # Define variables
+     PROJECT_DIR="NoServer-File-Share"
+     REPO_URL="https://github.com/ShohanurRahmanShohan/NoServer-File-Share.git"
+     VENV_DIR="venv"
+     FLASK_SCRIPT="flask_app.py"
+
+     # Clone the GitHub repository
+     git clone $REPO_URL
+     cd $PROJECT_DIR
+
+     # Create a new virtual environment
+     python3 -m venv $VENV_DIR
+
+     # Activate the virtual environment
+     source $VENV_DIR/bin/activate
+
+     # Install the required Python packages
+     pip install -r requirements.txt
+
+     # Run the Flask application script
+     python $FLASK_SCRIPT &
+
+     # Start port forwarding with Serveo
+     ssh -R 80:localhost:1234 serveo.net
+     ```
+
+3. **Make the Script Executable and Run**:
+   - Save the above script to a file (e.g., `install_and_run.sh`), then make it executable and run it:
+     ```bash
+     chmod +x install_and_run.sh
+     ./install_and_run.sh
+     ```
+
+4. **Access the Application**:
+   - Once the server is running, you can access it by visiting `http://localhost:1234` or the public URL provided by Serveo.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
