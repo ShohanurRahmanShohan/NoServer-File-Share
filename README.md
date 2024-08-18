@@ -74,15 +74,7 @@
      # Start port forwarding with Serveo
      ssh -R 80:localhost:1234 serveo.net
      ```
-
-3. **Make the Script Executable and Run**:
-   - Save the above script to a file (e.g., `install_and_run.sh`), then make it executable and run it:
-     ```bash
-     chmod +x install_and_run.sh
-     ./install_and_run.sh
-     ```
-
-4. **Access the Application**:
+ **Access the Application**:
    - Once the server is running, you can access it by visiting `http://localhost:1234` or the public URL provided by Serveo.
 
 ## License
