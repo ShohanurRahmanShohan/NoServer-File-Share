@@ -65,7 +65,7 @@ python $SCRIPT_NAME
 deactivate 
 ```
 **Port Forwarding**:
-   - To expose your local server to the internet, you can use Serveo with the following command in CMD:
+   - To expose your local server to the internet :
      ```bash
      ssh -R 80:localhost:1234 serveo.net
      ```
